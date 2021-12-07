@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            background-color: gray;
+            color: black;
+            /*font-family: 'Courier New';*/
+            /*font-family: sans-serif;*/  /*Todos dispositivos vão ler*/
+            /*font-family: monospace;*/  /*Fonte mono espaçada*/
+
+            font-family: Arial, Helvetica, sans-serif; /* -> Padrão*/
+
+            /*
+            Medidas Absolutas
+            cm, mm, in = polegada, px, pt = ponto, pc = paica
+
+            Medidas Relativas
+            em = relativo ao m maiscúlo de um letra em uma determinada fonte. 
+            ex = tamanho de uma altura x de uma fonte.
+            rem = relativo ao root configurado ao body.
+            vw = largura do dá viewport.
+            vh = altura dá viewport.
+            16px é o tamanho padrão dos navegadores
+            16px é igual à 1em
+            2em é o dobro de 16px 
+            1em tamnho dá letra.
+            */
+
+            font-size: 1em; /* Recomendado para todos dispositivos*/
+        }
+
+        h1, h2{
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quis nulla, ipsam, repudiandae itaque perferendis expedita vitae odio deserunt veritatis minima voluptatum neque. Magnam accusantium voluptas veritatis et ipsa laboriosam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo voluptatibus maiores numquam, sint, corporis nihil voluptate, dolorem quisquam adipisci consectetur similique! Accusamus rerum magni illum quas nihil expedita eum quibusdam?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est perferendis accusamus nesciunt alias sunt. Deserunt suscipit quo fugiat, officiis facere impedit necessitatibus? Ad dolorum fugiat voluptas consequuntur culpa nulla pariatur.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, numquam. Quidem, voluptates mollitia. Placeat cum assumenda impedit possimus voluptates reprehenderit, dolor, necessitatibus temporibus at, explicabo consequatur. Nemo laboriosam tempore eaque!</p>
+</body>
+</html>

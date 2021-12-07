@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'Love';
+            src: url('fonts/love\ larry.otf') format('opentype'), url('fonts/love\ larry.ttf') format('truetype');
+            font-weight: normal;  /* Para suavizar ou escurecer a fonte*/
+            font-style: normal;  /* Para dar estilo a fonte*/
+
+        }
+
+        /*
+        Tipos de formatos()
+        - opentype (otf)
+        - truetype (ttf)
+        - embedded-opentype
+        - truetype-aat (Aplee Advanced Typography)  
+        - svg
+        */
+
+        body{
+            font-family: 'ZCOOL KuaiLe', cursive;
+            background-color: red;
+            color: yellow;
+        }
+
+        h1{
+            text-align: center;
+            font-family: 'love', Times, serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate inventore minus illo ab cumque fugit, tempora non animi! Neque maxime enim quod. Aperiam adipisci repudiandae autem. Tenetur pariatur adipisci asperiores?</p>
+</body>
+</html>
