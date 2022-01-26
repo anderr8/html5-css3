@@ -14,6 +14,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative; /*importante para criar o efeito sticky*/
         }
 
         td, th {
@@ -30,6 +31,23 @@
 
         thead {
             background-color: yellow;
+        }
+
+        thead > tr > th { /* criando um cabeçalho fixo*/
+            position: sticky;
+            top: 0;
+            background-color: yellow;
+        }
+
+        tbody > tr:nth-child(odd) { /* efeito zebrado pode ser usado (odd) que significa ímpar ou (2n) que pula uma linha 3n pula 2 linhas*/
+            background-color: #796969;
+            font-weight: bold;
+        }
+
+        tbody > tr:nth-child(even) {/* (even)= significa par pula as linhas pares, ou (2n)*/
+            background-color: chocolate;
+            font-weight: bold;
+            /*text-decoration: underline;*/
         }
 
         .num {
