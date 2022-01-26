@@ -21,6 +21,13 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead {
             background-color: yellow;
         }
@@ -48,6 +55,7 @@
     <!--
         Anatomia Para Tabelas Grandes
         Table
+            CAPTION => legenda da tabela
             THEAD
                 TR, TD, TH
             TBODY
@@ -56,11 +64,12 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
-                <th>% da Pop. <br> Total</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+                <th scope="col">% da Pop. <br> Total</th>
             </tr>
         </thead>
 
@@ -204,8 +213,8 @@
 
         <tfoot>
             <tr>
-                <th class="red">Total de Habitantes</th>
-                <td class="yellow"><strong>213.317.639</strong></td>
+                <th scope="row" class="red">Total de Habitantes</th>
+                <td class="yellow" style="width: 50px;"><strong>213.317.639</strong></td>
             </tr>
         </tfoot>
     </table>
